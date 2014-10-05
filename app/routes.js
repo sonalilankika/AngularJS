@@ -1,14 +1,11 @@
-define(['app', 'controllers/SimpleController'], function(demoApp){
-	demoApp.config(function($routeProvider){
+define(['app', 'route-resolver'], function(demoApp){
+	demoApp.config(function($routeProvider, routeResolverProvider){
+		
+		var route = routeResolverProvider.route;
+		
 		$routeProvider
-		.when('/',{
-			controller: 'SimpleController',
-			templateUrl: 'app/views/view1.html'
-		})
-		.when('/view2', {
-			controller: 'SimpleController',
-			templateUrl: 'app/views/view2.html'
-		})
+		.when('/',route.resolve('View1'))
+		.when('/view2', route.resolve('View2'))
 		.otherwise({
 			redirectTo:'/'
 		});

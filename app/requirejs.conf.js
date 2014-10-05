@@ -21,7 +21,7 @@ require.config({
 			deps:[
 				'angular-route',
 				'oc-lazy-load'
-			]
+			],
 		},
 		'app':{
 			deps:[

@@ -1,5 +1,5 @@
 define(['app', 'factories/SimpleFactory'], function(demoApp){
-	demoApp.controller('SimpleController', function($scope, SimpleFactory){
+	demoApp.controller('View1Controller', function($scope, SimpleFactory){
 		$scope.customers = [];
 
 		init();

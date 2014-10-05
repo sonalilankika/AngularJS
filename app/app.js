@@ -1,6 +1,6 @@
 define(function(){
 	
-	var demoApp = angular.module('demoApp', ['ngRoute', 'routeResolver', 'oc.lazyLoad'])
+	var demoApp = angular.module('demoApp', ['ngRoute', 'routeResolverServices', 'oc.lazyLoad'])
 	
 	.config(function($routeProvider, routeResolverProvider, $controllerProvider, $compileProvider, $filterProvider, $provide, $ocLazyLoadProvider){
 
