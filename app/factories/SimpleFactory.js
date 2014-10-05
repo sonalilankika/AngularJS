@@ -1,15 +1,17 @@
-demoApp.factory('SimpleFactory', function(){
-	var customers = [
-	{name:'John Smith', city:'Phoenix'},
-	{name:'John Doe', city:'New York'},
-	{name:'Jane Doe', city:'San Francisco'}
-	];
+define(['app', 'routes'], function(demoApp){
+	demoApp.factory('SimpleFactory', function(){
+		var customers = [
+		{name:'John Smith A', city:'Phoenix'},
+		{name:'John Doe A', city:'New York'},
+		{name:'Jane Doe A', city:'San Francisco'}
+		];
 
-	var factory = {};
+		var factory = {};
 
-	factory.getCustomers = function (){
-		return customers;
-	}
+		factory.getCustomers = function (){
+			return customers;
+		}
 
-	return factory;
+		return factory;
+	});
 });

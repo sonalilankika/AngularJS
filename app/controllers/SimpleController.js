@@ -1,4 +1,4 @@
-define(['app'], function(demoApp){
+define(['app', 'factories/SimpleFactory'], function(demoApp){
 	demoApp.controller('SimpleController', function($scope, SimpleFactory){
 		$scope.customers = [];
 
