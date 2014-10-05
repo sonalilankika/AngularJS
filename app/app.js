@@ -1,4 +1,4 @@
-define(['angular'],function(angular){
+define(function(){
 	
 	var demoApp = angular.module('demoApp', ['ngRoute', 'routeResolver', 'oc.lazyLoad'])
 	

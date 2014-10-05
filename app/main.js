@@ -18,8 +18,17 @@ require.config({
 			deps:['angular']
 		},
 		'route-resolver':{
-			deps:['angular-route']
+			deps:[
+				'angular-route',
+				'oc-lazy-load'
+			]
+		},
+		'app':{
+			deps:[
+				'route-resolver'
+			]
 		}
+		
 	}
 });
 
