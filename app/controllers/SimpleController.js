@@ -1,16 +1,18 @@
-demoApp.controller('SimpleController', function($scope, SimpleFactory){
-	$scope.customers = [];
+define(['app'], function(demoApp){
+	demoApp.controller('SimpleController', function($scope, SimpleFactory){
+		$scope.customers = [];
 
-	init();
-	function init(){
-		$scope.customers = SimpleFactory.getCustomers();
-	}
+		init();
+		function init(){
+			$scope.customers = SimpleFactory.getCustomers();
+		}
 
-	$scope.addCustomer = function(){
-		$scope.customers.push(
-			{name:$scope.newCustomer.name, city:$scope.newCustomer.city}
-			);
+		$scope.addCustomer = function(){
+			$scope.customers.push(
+				{name:$scope.newCustomer.name, city:$scope.newCustomer.city}
+				);
 
-		$scope.newCustomer = null;
-	};
+			$scope.newCustomer = null;
+		};
+	});
 });
