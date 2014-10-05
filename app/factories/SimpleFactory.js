@@ -1,4 +1,4 @@
-define(['app', 'routes'], function(demoApp){
+define(['app'], function(demoApp){
 	demoApp.factory('SimpleFactory', function(){
 		var customers = [
 		{name:'John Smith A', city:'Phoenix'},

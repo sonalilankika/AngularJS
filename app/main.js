@@ -16,10 +16,13 @@ require.config({
 		},
 		'oc-lazy-load':{
 			deps:['angular']
+		},
+		'route-resolver':{
+			deps:['angular-route']
 		}
 	}
 });
 
-require(['angular', 'angular-route', 'route-resolver', 'oc-lazy-load', 'controllers/SimpleController'], function(angular){
+require(['routes'], function(){
 		angular.bootstrap(document, ['demoApp']);
 });

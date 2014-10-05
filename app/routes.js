@@ -1,4 +1,4 @@
-define(['app'], function(demoApp){
+define(['app', 'route-resolver', 'oc-lazy-load', 'controllers/SimpleController'], function(demoApp){
 	demoApp.config(function($routeProvider){
 		$routeProvider
 		.when('/',{
